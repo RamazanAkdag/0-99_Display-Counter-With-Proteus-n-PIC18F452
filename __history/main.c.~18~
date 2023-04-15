@@ -1,0 +1,30 @@
+#include <main.h>
+int display[10] = {0x3f,0x06,0x5B,0x4F,0x66,0x6D,0x7D,0x07,0x7f,0x6f};
+int sayac = 0;
+void main()
+{
+  set_tris_c(0x00);
+  set_tris_a(0xff);
+  set_tris_d(0x00);
+  output_c(0x00); // onlar basamaðý
+  output_d(0x00); //birler basamaðý
+
+  while(TRUE){
+   
+     int onlar = i/10;
+     int birler = i%10;
+      
+    
+  }
+  for(int i = 0; i <100 ;i++){
+     int onlar = i/10;
+     int birler = i%10;
+      
+      output_c(display[onlar]);
+      output_d(display[birler]);
+      delay_ms(50);
+   
+   
+   }
+
+}
